@@ -5,9 +5,13 @@ This extension allows you to save, switch, and manage multiple ChatGPT accounts 
 
 🔥 Key Features:
 ✅ Save multiple ChatGPT accounts with just one click.
+
 ✅ Switch accounts instantly without re-entering credentials.
+
 ✅ Securely store cookies and session data for each account.
+
 ✅ Automatically reload the page to apply account changes.
+
 ✅ Delete or clear saved accounts anytime.
 
 Perfect for users who manage multiple ChatGPT accounts for work, study, or different AI personas. Say goodbye to constant logins and enjoy a smoother experience! 🎉
