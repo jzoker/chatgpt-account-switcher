@@ -20,3 +20,21 @@ Perfect for users who manage multiple ChatGPT accounts for work, study, or diffe
 
 ⚠️ Note: This extension does not bypass ChatGPT’s security policies. It simply helps manage stored session data more efficiently.
 
+### Usage:
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+
+Open Google Chrome.
+
+Go to chrome://extensions/.
+
+Enable Developer mode (top right corner).
+
+Click "Load unpacked".
+
+Select the folder where you clone the extension.
+
+The extension should now appear in your Chrome toolbar.
+
+If needed, pin it by clicking the puzzle icon 🧩 in the toolbar.
+
+Open chat.openai.com, and save the account
