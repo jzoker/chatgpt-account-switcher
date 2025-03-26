@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Account Switcher",
+    "version": "1.0",
+    "description": "Quickly switch between multiple ChatGPT accounts.",
+    "permissions": [
+      "cookies",
+      "storage",
+      "tabs",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://chat.openai.com/*",
+      "https://chatgpt.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
