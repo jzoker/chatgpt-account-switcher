@@ -1,9 +1,11 @@
 # chatgpt-account-switcher
+
 Easily switch between multiple ChatGPT accounts with this Chrome extension! 🚀
 
 This extension allows you to save, switch, and manage multiple ChatGPT accounts effortlessly. It works by securely storing your cookies, localStorage, and sessionStorage, enabling seamless account switching without the hassle of logging in and out manually.
 
 🔥 Key Features:
+
 ✅ Save multiple ChatGPT accounts with just one click.
 
 ✅ Switch accounts instantly without re-entering credentials.
