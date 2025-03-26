@@ -21,7 +21,7 @@ Perfect for users who manage multiple ChatGPT accounts for work, study, or diffe
 ⚠️ Note: This extension does not bypass ChatGPT’s security policies. It simply helps manage stored session data more efficiently.
 
 ### Usage:
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+git clone https://github.com/jzoker/chatgpt-account-switcher/
 
 Open Google Chrome.
 
