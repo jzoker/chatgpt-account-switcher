@@ -38,3 +38,6 @@ Perfect for users who manage multiple ChatGPT accounts for work, study, or diffe
 - If needed, pin it by clicking the puzzle icon 🧩 in the toolbar.
 
 - Open chat.openai.com, and save the account
+
+### Store:
+- https://chromewebstore.google.com/detail/chatgpt-account-switcher/blfjijcafmiginiijkabpigfpcegkglc
