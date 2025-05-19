@@ -100,17 +100,51 @@ function renderAccounts(accounts) {
   list.innerHTML = '';
   for (const name of Object.keys(accounts)) {
     const li = document.createElement('li');
-    li.textContent = name;
+    li.style.display = 'flex';
+    li.style.alignItems = 'center';
+    li.style.justifyContent = 'space-between';
+    li.style.gap = '12px';
+    li.style.padding = '10px 14px';
+    li.style.borderRadius = '7px';
+    li.style.marginBottom = '10px';
+    li.style.background = '#26272b';
+
+    const nameSpan = document.createElement('span');
+    nameSpan.textContent = name;
+    nameSpan.style.flex = '1';
+    nameSpan.style.fontSize = '1rem';
+
+    const actions = document.createElement('div');
+    actions.style.display = 'flex';
+    actions.style.gap = '10px';
 
     const switchBtn = document.createElement('button');
     switchBtn.textContent = 'Switch';
+    switchBtn.style.padding = '6px 14px';
+    switchBtn.style.borderRadius = '6px';
+    switchBtn.style.border = 'none';
+    switchBtn.style.background = '#6366f1';
+    switchBtn.style.color = '#fff';
+    switchBtn.style.fontWeight = '500';
+    switchBtn.style.cursor = 'pointer';
     switchBtn.onclick = () => switchAccount(name);
 
     const delBtn = document.createElement('button');
     delBtn.textContent = 'Delete';
+    delBtn.style.padding = '6px 14px';
+    delBtn.style.borderRadius = '6px';
+    delBtn.style.border = 'none';
+    delBtn.style.background = '#232329';
+    delBtn.style.color = '#f87171';
+    delBtn.style.fontWeight = '500';
+    delBtn.style.cursor = 'pointer';
     delBtn.onclick = () => deleteAccount(name);
 
-    li.append(switchBtn, delBtn);
+    actions.appendChild(switchBtn);
+    actions.appendChild(delBtn);
+
+    li.appendChild(nameSpan);
+    li.appendChild(actions);
     list.appendChild(li);
   }
 }
