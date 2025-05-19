@@ -1,15 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>ChatGPT Account Switcher</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #18181b;
+      color: #fafafa;
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-width: 260px;
+    }
+    .container {
+      padding: 20px 18px 16px 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      background: #232329;
+    }
+    h3 {
+      margin: 0 0 16px 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    ul#accountList {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 18px 0;
+    }
+    ul#accountList li {
+      background: #26272b;
+      margin-bottom: 8px;
+      padding: 8px 12px;
+      border-radius: 7px;
+      font-size: 0.98rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 7px;
+      background: #1a1a1e;
+      color: #fafafa;
+      font-size: 1rem;
+      outline: none;
+      box-sizing: border-box;
+      transition: background 0.2s;
+    }
+    input[type="text"]:focus {
+      background: #232329;
+    }
+    button {
+      width: 100%;
+      padding: 9px 0;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 7px;
+      background: linear-gradient(90deg, #6366f1 0%, #a21caf 100%);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.18s, box-shadow 0.18s;
+      box-shadow: 0 1px 4px rgba(99,102,241,0.08);
+    }
+    button#clearAll {
+      background: #232329;
+      color: #f87171;
+      border: 1px solid #2d2d34;
+      margin-bottom: 0;
+    }
+    button:hover {
+      filter: brightness(1.08);
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #2d2d34;
+      margin: 18px 0 12px 0;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h3>ChatGPT Accounts</h3>
     <ul id="accountList"></ul>
 
-    <input type="text" id="accountName" placeholder="Account Name" />
+    <input type="text" id="accountName" placeholder="Account Name" autocomplete="off" />
     <button id="saveAccount">Save Current Account</button>
 
     <hr>
@@ -18,4 +101,3 @@
   <script src="popup.js"></script>
 </body>
 </html>
-
